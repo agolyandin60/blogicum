@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+  {{ post.location }}. {{ post.date }}
+{% endblock %}
+{% block content %}
+  <div class="container py-5">
+    <article>
+      <ul>
+        <li>
+          {{ post.location }}
+        </li>
+        <li>
+          {{ post.date }}
+        </li>
+        <li>
+          {{ post.category }}
+        </li>
+      </ul>         
+      <p>
+        {{ post.text }}
+      </p>          
+    </article>                
+  </div>
+{% endblock %}
